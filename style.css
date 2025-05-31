@@ -1,0 +1,72 @@
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      margin: 0;
+    }
+    .calculator {
+      background-color: #1e1e1e;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      width: 500px;
+    }
+    .display-container {
+      margin-bottom: 20px;
+    }
+    .previous-display {
+      height: 30px;
+      font-size: 1.2em;
+      color: #aaa;
+      text-align: right;
+      padding-right: 10px;
+    }
+    .display {
+      width: 100%;
+      height: 80px;
+      font-size: 2.5em;
+      text-align: right;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 2px solid #555;
+      border-radius: 10px;
+      background-color: #333;
+      color: #0f0;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    button {
+      font-size: 2em;
+      padding: 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #555;
+      color: white;
+      transition: transform 0.2s ease, background-color 0.3s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .operator { background-color: #f9a825; }
+    .equals { background-color: #4caf50; }
+    .clear { background-color: #f44336; }
+    .memory { background-color: #3f51b5; }
+    .special { background-color: #9c27b0; }
+
+    button[data-number="0"] { background-color: #ff5722; }
+    button[data-number="1"] { background-color: #e91e63; }
+    button[data-number="2"] { background-color: #9c27b0; }
+    button[data-number="3"] { background-color: #673ab7; }
+    button[data-number="4"] { background-color: #3f51b5; }
+    button[data-number="5"] { background-color: #2196f3; }
+    button[data-number="6"] { background-color: #03a9f4; }
+    button[data-number="7"] { background-color: #00bcd4; }
+    button[data-number="8"] { background-color: #009688; }
+    button[data-number="9"] { background-color: #4caf50; }
